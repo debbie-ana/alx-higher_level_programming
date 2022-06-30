@@ -4,4 +4,4 @@ if __name__ == "__main__":
     d = dir()
     for i in range(0, len(d)):
         if d[i][0:2] != "__":
-            print("{0}".format(d[i]))
+            print("{}".format(d[i]))
