@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/python3.8.0
 if __name__ == "__main__":
     import hidden_4
     d = dir(hidden_4)
