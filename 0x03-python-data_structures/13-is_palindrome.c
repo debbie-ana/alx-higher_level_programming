@@ -1,4 +1,4 @@
-#include "lists.h"
+#include "lists.h"
 /**
  * palindrome - using recursion to check for palindrome
  * @l: pointer to list
