@@ -14,7 +14,7 @@ class Square:
         Args:
             size (int): length of square
         """
-        self.__size = size
+        self.size = size
 
     def area(self):
         """Calculates the area of the square
