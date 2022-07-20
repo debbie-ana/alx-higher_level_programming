@@ -17,7 +17,7 @@ void print_python_float(PyObject *p)
 	printf("[.] float object info\n");
 	if (strcmp(p->ob_type->tp_name, "float"))
 	{
-		printf("  [ERROR] Invalid Float Object\n");
+		printf(" [ERROR] Invalid Float Object\n");
 		return;
 	}
 	d = ((PyFloatObject *)p)->ob_fval;
