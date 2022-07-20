@@ -17,7 +17,7 @@ void print_python_float(PyObject *p)
 	printf("[.] float object info\n");
 	if (strcmp(p->ob_type->tp_name, "float"))
 	{
-		printf(" [ERROR] Invalid Float Object\n");
+		printf("  [ERROR] Invalid Float Object\n");
 		return;
 	}
 	d = ((PyFloatObject *)p)->ob_fval;
@@ -65,7 +65,7 @@ void print_python_list(PyObject *p)
 	printf("[*] Python list info\n");
 	if (strcmp(p->ob_type->tp_name, "list"))
 	{
-		printf(" [ERROR] Invalid List Object\n");
+		printf("  [ERROR] Invalid List Object\n");
 		return;
 	}
 	printf("[*] Size of the Python List = %lu\n", ((PyVarObject *)p)->ob_size);
