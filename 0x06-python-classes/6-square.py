@@ -70,9 +70,9 @@ class Square:
         Returns:
             None
         """
-        if type(value) == tuple and len(value) == 2:
-            if type(value[0]) == int and type(value[1]) == int:
-                if value[0] >= 0 and value[1] >= 0:
+        if type(value) == tuple and len(value) == 2 and \
+                type(value[0]) == int and type(value[1]) == int and \
+                value[0] >= 0 and value[1] >= 0:
                     self.__position = value
         else:
             raise TypeError("position must be tuple of 2 positive integers")
