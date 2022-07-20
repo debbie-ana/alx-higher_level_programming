@@ -90,3 +90,7 @@ class Square:
         for a in range(self.__size):
             print("".join([" " for b in range(self.__position[0])]), end="")
             print("".join(["#" for c in range(self.__size)]))
+
+    def __str__(self):
+        """string representation of square"""
+        self.my_print()
