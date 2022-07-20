@@ -70,12 +70,12 @@ class Square:
         Returns:
             None
         """
-        if type(value) == tuple and len(value) == 2 and \
-                type(value[0]) == int and type(value[1]) == int and \
-                value[0] >= 0 and value[1] >= 0:
-                    self.__position = value
+        if type(value) is not tuple or len(value) != 2 or \
+                type(value[0]) is not int or type(value[1]) is not int or \
+                value[0] < 0 or value[1] < 0:
+                    raise TypeError("position must be tuple of 2 positive integers")
         else:
-            raise TypeError("position must be tuple of 2 positive integers")
+            self.__position = value
 
     def my_print(self):
         """ prints square

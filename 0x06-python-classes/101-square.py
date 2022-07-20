@@ -93,4 +93,4 @@ class Square:
 
     def __str__(self):
         """string representation of square"""
-        self.my_print()
+        return self.my_print()
