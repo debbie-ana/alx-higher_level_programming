@@ -20,7 +20,7 @@ class Rectangle:
 
     def __del__(self):
         """deleting an instance of class"""
-        print("Bye Rectangle...")
+        print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
     @property
