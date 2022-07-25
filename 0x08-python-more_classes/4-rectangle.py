@@ -69,7 +69,7 @@ class Rectangle:
         """returns string representation of rectangle
         and works like print"""
         s = ""
-        if self.__width != 0 or self.__height != 0:
+        if self.__width != 0 and self.__height != 0:
             s += "\n".join("#" * self.__width for i in range(self.__height))
         return s
 

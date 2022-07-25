@@ -69,14 +69,14 @@ class Rectangle:
         """returns string representation of rectangle
         and works like print"""
         s = ""
-        if self.__width != 0 or self.__height != 0:
+        if self.__width != 0 and self.__height != 0:
             s += "\n".join("#" * self.__width for i in range(self.__height))
         return s
 
     def __repr__(self):
         """returns string representation of rectangle
         to be able to recreate a new instance by using eval"""
-        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)i
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
     def __del__(self):
         """deleting an instance of class"""
