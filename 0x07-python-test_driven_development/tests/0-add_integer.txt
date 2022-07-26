@@ -1,0 +1,33 @@
+The 0-add_integer module
+
+Checking regular addition:
+	>>> add_integer(2, 3)
+	5
+
+Checking positive with negative:
+	>>> add_integer(6, -5)
+	1
+
+checking float with int:
+	>>> add_integer(5.2, 3)
+	8
+
+checking int with float:
+	>>> add_integer(2, 3.4)
+	5
+
+checking two floats:
+	>>> add_integer(1.2, 6.7)
+	7
+
+checking with a as non-number:
+	>>>add_integer("string", 0)
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
+
+checking with b as non-number:
+	>>>add_integer(6, "str")
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
