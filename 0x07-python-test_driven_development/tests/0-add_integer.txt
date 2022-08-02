@@ -1,12 +1,14 @@
-The 0-add_integer module
+#!/usr/bin/python3
+The ``0-add_integer`` module 
+ ====================== 
+  
+ Using ``add_integer``
 ----------------------------------------------
 Checking for module docstring:
     >>> md = __import__("0-add_integer").__doc__
     >>> len(md) > 1
     True
 
-Using the function add_integer in the module
-----------------------------------------------
 Importing the function from the module
 >>> add_integer = __import__("0-add_integer").add_integer
 
@@ -18,7 +20,7 @@ Checking for function docstring:
 Checking regular addition:
     >>> add_integer(5, 6)
     11
-i
+
 Checking int with float:
     >>> add_integer(2, 7.1)
     9
