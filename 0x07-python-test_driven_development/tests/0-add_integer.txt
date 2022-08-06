@@ -42,13 +42,13 @@ Checking non-number with number:
     TypeError: a must be an integer
 
 Checking number with non-number:
-    >>> add_integer(3, [pot])
+    >>> add_integer(3, "pot")
     Traceback (most recent call last):
     ...
     TypeError: b must be an integer
 
 Checking non-number with non-number:
-    >>> add_integer([a, b, c], "great")
+    >>> add_integer([2], "great")
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
