@@ -68,7 +68,7 @@ Test(matrix has one float(nan):
     [[1.0, 1.5], [1.0, nan]]
 
 Test(missing one argument):
-    >>> matrix = [[1, 2][2, 5]]
+    >>> matrix = [[1, 2], [2, 5]]
     >>> print(matrix_divided(matrix))
     Traceback (most recent call last):
     ...
