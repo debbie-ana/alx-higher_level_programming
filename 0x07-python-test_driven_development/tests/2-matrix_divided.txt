@@ -66,3 +66,16 @@ Test(matrix has one float(nan):
     >>> matrix = [[2, 3], [2, float('nan')]]
     >>> print(matrix_divided(matrix, 2))
     [[1.0, 1.5], [1.0, nan]]
+
+Test(missing one argument):
+    >>> matrix = [[1, 2][2, 5]]
+    >>> print(matrix_divided(matrix))
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+Test(missing 2 arguments):
+    >>> print(matrix_divided())
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
