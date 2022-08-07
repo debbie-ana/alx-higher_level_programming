@@ -1,22 +1,3 @@
-#!/usr/bin/python3
-The ``2-matrix_divided`` module 
- ====================== 
-  
-Using ``matrix_divided``
-----------------------------------------------
-Checking for module docstring:
-    >>> md = __import__("2-matrix_divided").__doc__
-    >>> len(md) > 1
-    True
-
-Importing the function from the module:
-    >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
-
-Checking for function docstring:
-    >>> fd = __import__("2-matrix_divided").matrix_divided.__doc__
-    >>> len(fd) > 1
-    True
-
 Test(matrix = list of lists of integers and div = integer):
     >>> matrix = [[4, 6, 8], [2, 9, 3]]
     >>> print(matrix_divided(matrix, 2))
