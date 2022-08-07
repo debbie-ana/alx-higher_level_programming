@@ -40,7 +40,7 @@ Test(div = 0):
 
 Test(matrix is not list of lists of integers and div = integer):
     >>> matrix = (1, 4, 5)
-    >>> print(matrix_divided(matrix, 2)
+    >>> print(matrix_divided(matrix, 2))
     Traceback (most recent call last):
     ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
@@ -57,15 +57,12 @@ Test(div = float(inf)):
     >>> print(matrix_divided(matrix, float('inf')))
     [[0.0, 0.0], [0.0, 0.0]]
 
-Test(matrix has one float(inf):
+Test(matrix has one float(inf)):
     >>> matrix = [[5, float('inf')], [0, 1]]
     >>> print(matrix_divided(matrix, 2))
-    [[2.5, inf], [0, 0.5]]
+    [[2.5, inf], [0.0, 0.5]]
 
 Test(matrix has one float(nan):
     >>> matrix = [[2, 3], [2, float('nan')]]
     >>> print(matrix_divided(matrix, 2))
     [[1, 1.5], [1, nan]]
-
-Test(matrix = list of lists of integers with one float(inf/nan)
-    and div = float(inf/nan):
