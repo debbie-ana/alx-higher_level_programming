@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """print square module"""
 
+
 def print_square(size):
     """this function prints a square
     given the size length of the square"""
