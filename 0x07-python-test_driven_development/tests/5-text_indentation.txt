@@ -20,9 +20,9 @@ Checking for function docstring:
 Test (text is string):
     >>> text_indentation("hello .How are you? ")
     hello .
-
+    <BLANKLINE>
     How are you?
-
+    <BLANKLINE>
 
 Test (text is not string):
     >>> text_indentation(9)
@@ -33,9 +33,8 @@ Test (text is not string):
 Test (string with blank line):
     >>> text_indentation("what a great day.\n")
     what a great day.
-
-
-
+    <BLANKLINE>
+    <BLANKLINE>
 
 Test (missing one argument):
     >>> text_indentation()
