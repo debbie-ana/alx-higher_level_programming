@@ -39,7 +39,7 @@ Test(div = 0):
     ZeroDivisionError: division by zero
 
 Test(matrix is not list of lists of integers and div = integer):
-    >>> matrix = (1, 4, 5)
+    >>> matrix = [1, 4, 5]
     >>> print(matrix_divided(matrix, 2))
     Traceback (most recent call last):
     ...
@@ -65,4 +65,4 @@ Test(matrix has one float(inf)):
 Test(matrix has one float(nan):
     >>> matrix = [[2, 3], [2, float('nan')]]
     >>> print(matrix_divided(matrix, 2))
-    [[1, 1.5], [1, nan]]
+    [[1.0, 1.5], [1.0, nan]]
