@@ -2,7 +2,6 @@
 """text indentation module"""
 
 
-
 def text_indentation(text):
     """prints a text with 2 new lines after the characters
     ., ? and :"""
