@@ -92,7 +92,15 @@ class Rectangle(Base):
     def display(self):
         """prints in stdout the Rectangle instance
         with the character #"""
+        print('\n' * self.y, end='')
         for i in range(self.__height):
-            for j in range(self.__width):
-                print("#", end="")
-            print()
+            print(' ' * self.x + '#' * self.width)
+
+    def __str__(self):
+        """overrides the __str__ method so that it returns something else"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+                 self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args):
+        """assigns an argument to each attribute"""
+        dict = {}
