@@ -103,7 +103,10 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """assigns an argument to each attribute"""
-        dict = {}
+
+    def update(self, *args, **kwargs):
+        """assigns a key/value argument to each attribute"""
+        dct = {}
         if args is not None and len(args) > 0:
             keys = ['id', 'width', 'height', 'x', 'y']
             for i in range(len(args) if len(args) <= 5 else 5):
