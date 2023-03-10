@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import json
 """module contains the class Base"""
 
 
@@ -13,3 +14,9 @@ class Base:
         else:
             Base.__nb_objects = Base.__nb_objects + 1
             self.id = Base.__nb_objects
+
+    def to_json_string(list_dictionaries):
+        if list_dictionaries == None:
+            return "[]"
+        else:
+            return json.dumps(list_dictionaries)
