@@ -18,10 +18,11 @@ class Rectangle {
   }
 
   rotate () {
-    let wd = this.width;
+    const wd = this.width;
     this.width = this.height;
     this.height = wd;
   }
+
   double () {
     this.width *= 2;
     this.height *= 2;
