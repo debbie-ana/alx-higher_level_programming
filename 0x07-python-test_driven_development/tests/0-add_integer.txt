@@ -1,0 +1,76 @@
+#!/usr/bin/python3
+The ``0-add_integer`` module 
+ ====================== 
+  
+ Using ``add_integer``
+----------------------------------------------
+Checking for module docstring:
+    >>> md = __import__("0-add_integer").__doc__
+    >>> len(md) > 1
+    True
+
+Importing the function from the module
+>>> add_integer = __import__("0-add_integer").add_integer
+
+Checking for function docstring:
+    >>> fd = __import__("0-add_integer").add_integer.__doc__
+    >>> len(fd) > 1
+    True
+
+Checking regular addition:
+    >>> add_integer(5, 6)
+    11
+
+Checking int with float:
+    >>> add_integer(2, 7.1)
+    9
+
+Checking float with int:
+    >>> add_integer(3.7, 2)
+    5
+
+Checking for passed NaN:
+    >>> add_integer(2, float('nan'))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
+
+Checking non-number with number:
+    >>> add_integer("boy", 5)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+Checking number with non-number:
+    >>> add_integer(3, "pot")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+Checking non-number with non-number:
+    >>> add_integer([2], "great")
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+Checking float overflow:
+    >>> add_integer(1, float('inf'))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
+
+Check for missing one argument:
+    >>> add_integer(2)
+    100
+
+Check for missing two arguments:
+    >>> add_integer()
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Check for more than 2 arguments:
+    >>> add_integer(3, 1, 8)
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
